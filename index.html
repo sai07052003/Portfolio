@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Portfolio website for Harshith Sai Bontha, a frontend web developer specializing in responsive React, Next.js, Tailwind CSS, Redux, and REST API-driven web applications." />
+  <meta name="keywords"
+    content="Harshith Sai Bontha, Frontend Developer, Web Developer, React, Next.js, Tailwind CSS, Portfolio, Guntur, India" />
+  <meta name="author" content="Harshith Sai Bontha" />
+  <meta name="robots" content="index, follow" />
+
+  <meta property="og:title" content="Harshith Sai Bontha | Frontend Web Developer Portfolio" />
+  <meta property="og:description"
+    content="Portfolio website for Harshith Sai Bontha, a frontend web developer specializing in responsive React, Next.js, Tailwind CSS, Redux, and REST API-driven web applications." />
+  <meta property="og:type" content="website" />
+
+  <title>Harshith Sai Bontha | Frontend Web Developer Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ink: "#101828",
+            cloud: "#F7FAFC",
+            line: "#D8E0EA",
+            teal: "#14B8A6",
+            blue: "#2563EB",
+            amber: "#F59E0B",
+          },
+          fontFamily: {
+            sans: ["Inter", "ui-sans-serif", "system-ui", "sans-serif"],
+          },
+          boxShadow: {
+            soft: "0 24px 70px rgba(16, 24, 40, 0.12)",
+          },
+        },
+      },
+    };
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body class="bg-cloud text-ink antialiased">
+  <header id="navbar" class="fixed inset-x-0 top-0 z-50 border-b border-transparent transition-all duration-300">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8">
+      <a href="#home" class="flex items-center gap-3 font-extrabold tracking-tight">
+        <span class="grid h-10 w-10 place-items-center rounded-lg bg-ink text-white">HB</span>
+        <span>Harshith Sai Bontha</span>
+      </a>
+
+      <div class="hidden items-center gap-7 text-sm font-semibold text-slate-700 lg:flex">
+        <a class="nav-link" href="#home">Home</a>
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#skills">Skills</a>
+        <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-link" href="#experience">Experience</a>
+        <a class="nav-link" href="#contact">Contact</a>
+        <a href="https://drive.google.com/file/d/1mhJmcEIwHDiNAm3KgpeZR4xp0jQgN7FU/view?usp=sharing"
+          class="rounded-lg bg-ink px-4 py-2.5 text-white transition hover:bg-blue">
+          Resume
+        </a>
+      </div>
+
+      <button id="menuToggle" class="grid h-11 w-11 place-items-center rounded-lg border border-line bg-white lg:hidden"
+        aria-label="Open navigation menu" aria-expanded="false">
+        <span class="hamburger"></span>
+      </button>
+    </nav>
+
+    <div id="mobileMenu" class="mobile-menu lg:hidden">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+      <a href="assets/Harshith_Sai_Bontha_Resume.pdf">Resume</a>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero-section overflow-hidden px-5 pt-32 lg:px-8">
+      <div class="mx-auto grid max-w-7xl items-center gap-12 pb-20 pt-8 lg:grid-cols-[1fr_0.9fr] lg:pb-28">
+        <div class="reveal">
+          <p
+            class="mb-5 inline-flex rounded-full border border-teal/30 bg-white px-4 py-2 text-sm font-semibold text-teal">
+            Hi, I'm
+          </p>
+          <h1 class="max-w-4xl text-5xl font-extrabold tracking-tight text-ink sm:text-6xl lg:text-7xl">
+            Harshith Sai Bontha
+          </h1>
+          <h2 class="mt-4 text-3xl font-bold text-blue sm:text-4xl">Web Developer</h2>
+          <p class="mt-6 max-w-2xl text-lg leading-8 text-slate-650">
+            Computer Science graduate building responsive, component-based web applications with React.js,
+            Next.js, Tailwind CSS, Redux, and REST API integrations.
+          </p>
+          <div class="mt-9 flex flex-col gap-4 sm:flex-row">
+            <a href="#projects" class="btn-primary">View My Work</a>
+            <a href="#contact" class="btn-secondary">Get In Touch</a>
+          </div>
+          <div class="mt-8 flex flex-wrap gap-3">
+            <a class="social-link" href="https://github.com/sai07052003" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="social-link" href="https://www.linkedin.com/in/harshith-sai-bontha-464978267/" target="_blank"
+              rel="noreferrer">LinkedIn</a>
+          </div>
+        </div>
+
+        <div class="developer-visual reveal" aria-hidden="true">
+          <div class="browser-shell">
+            <div class="browser-top">
+              <span></span><span></span><span></span>
+            </div>
+            <div class="visual-grid">
+              <div class="code-panel">
+                <p><b>const</b> profile = {</p>
+                <p>&nbsp;&nbsp;role: "Frontend Developer",</p>
+                <p>&nbsp;&nbsp;stack: ["Next.js", "Redux"],</p>
+                <p>&nbsp;&nbsp;focus: "Reusable UI"</p>
+                <p>};</p>
+              </div>
+              <div class="metric-card"><span>8.1</span><small>CGPA</small></div>
+              <div class="metric-card accent"><span>2025</span><small>CSE Graduate</small></div>
+              <div class="mini-dashboard">
+                <i style="height: 74%"></i><i style="height: 46%"></i><i style="height: 88%"></i><i
+                  style="height: 62%"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="mx-auto grid max-w-7xl gap-10 px-5 lg:grid-cols-[0.85fr_1.15fr] lg:px-8">
+        <div class="reveal">
+          <p class="eyebrow">About</p>
+          <h2 class="section-title">Building polished web experiences with practical engineering.</h2>
+        </div>
+        <div class="reveal">
+          <p class="text-lg leading-8 text-slate-650">
+            Harshith is a detail-oriented web developer from Guntur, Andhra Pradesh with hands-on experience
+            building responsive training platforms, HRMS portals, admin dashboards, and social feed modules.
+            His work centers on clean components, reliable state management, API-driven interfaces, and
+            layouts that feel natural across devices.
+          </p>
+          <div class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            <div class="stat-card"><strong>4+</strong><span>Real Projects</span></div>
+            <div class="stat-card"><strong>12+</strong><span>Technologies</span></div>
+            <div class="stat-card"><strong>2025</strong><span>B.Tech CSE</span></div>
+            <div class="stat-card"><strong>2</strong><span>Companies</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section bg-white">
+      <div class="mx-auto max-w-7xl px-5 lg:px-8">
+        <p class="eyebrow reveal">Skills</p>
+        <h2 class="section-title reveal">A focused frontend stack with full product awareness.</h2>
+        <div class="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
+          <article class="skill-card reveal">
+            <span>FE</span>
+            <h3>Frontend</h3>
+            <p>HTML5, CSS3, JavaScript, React.js, Next.js, Tailwind CSS, Bootstrap</p>
+          </article>
+          <article class="skill-card reveal">
+            <span>BE</span>
+            <h3>Backend</h3>
+            <p>Node.js, REST API integration, dynamic data flows, service-connected UI</p>
+          </article>
+          <article class="skill-card reveal">
+            <span>DB</span>
+            <h3>Database</h3>
+            <p>MongoDB fundamentals, SQL fundamentals, data modeling awareness for web apps</p>
+          </article>
+          <article class="skill-card reveal">
+            <span>TL</span>
+            <h3>Tools</h3>
+            <p>Git, GitHub, Redux, reusable components, responsive design, debugging</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="mx-auto max-w-7xl px-5 lg:px-8">
+        <p class="eyebrow reveal">Projects</p>
+        <h2 class="section-title reveal">Selected work across portals, platforms, and product UI.</h2>
+        <div class="mt-10 grid gap-6 md:grid-cols-2">
+          <article class="project-card reveal">
+            <div class="project-thumb jobs">
+              <img src="img/VJP.png" alt="VJP Consultancy job portal platform project preview" loading="lazy">
+            </div>
+            <div class="p-6">
+              <h3>VJP Consultancy</h3>
+              <p>Responsive job consultancy platform connecting candidates with IT and general job opportunities.</p>
+              <div class="tags"><span>React</span><span>Bootstrap</span><span>JavaScript</span></div>
+              <div class="project-actions">
+                <a class="VJP-link" href="https://vjpjobconsultancy.netlify.app/" target="_blank"
+                  rel="noreferrer"><button type="button">Live Demo</button></a>
+              </div>
+            </div>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-thumb hrms">
+              <img src="img/hrms.png" alt="Collectiv Work HRMS Portal dashboard project preview" loading="lazy">
+            </div>
+            <div class="p-6">
+              <h3>HRMS Portal</h3>
+              <p>Employee directory, attendance, leave management, timesheets, admin workflows, and internal feed.</p>
+              <div class="tags"><span>Next.js</span><span>Tailwind</span><span>Redux</span><span>REST APIs</span></div>
+              <div class="project-actions">
+                <a class="hrms-link" href="https://dev.collectivwork.com/dashboard" target="_blank" rel="noreferrer">
+                  <button type="button">Live Demo</button></a>
+              </div>
+            </div>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-thumb training">
+              <img src="img/training.png" alt="Techlynx Training & Career platform project preview" loading="lazy">
+            </div>
+            <div class="p-6">
+              <h3>Training & Career Platform</h3>
+              <p>Course, hiring, services, CTA, chatbot, and contact interfaces for a career-focused platform.</p>
+              <div class="tags"><span>React</span><span>HTML5</span><span>CSS3</span><span>Bootstrap</span></div>
+              <div class="project-actions">
+                <a class="tcs-link" href="https://techlynxinnovationspvtltd.netlify.app/" target="_blank"
+                  rel="noreferrer"><button type="button">Live Demo</button></a>
+              </div>
+            </div>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-thumb placement">
+              <img src="img/cpps.png" alt="Career Point Placement Services website project preview" loading="lazy">
+            </div>
+            <div class="p-6">
+              <h3>Career Point Placement Services</h3>
+              <p>Recruitment and placement services website highly optimized for Google SEO.</p>
+              <div class="tags"><span>Next.js</span><span>Tailwind CSS</span><span>REST APIs</span></div>
+              <div class="project-actions">
+                <a class="career-point-link" href="https://career-point-placement-services.vercel.app/" target="_blank"
+                  rel="noreferrer"><button type="button">Live Demo</button></a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section bg-white">
+      <div class="mx-auto max-w-7xl px-5 lg:px-8">
+        <p class="eyebrow reveal">Experience</p>
+        <h2 class="section-title reveal">Recent professional work.</h2>
+        <div class="timeline mt-10">
+          <article class="timeline-item reveal">
+            <time>March 2025 - Present</time>
+            <h3>Frontend Developer</h3>
+            <p class="company">Collectiv Work - HRMS Portal</p>
+            <p>
+              Built responsive HR and employee management modules with Next.js, Tailwind CSS, Redux, and REST APIs,
+              including approval workflows, social feed actions, notifications, and reusable dashboard components.
+            </p>
+          </article>
+          <article class="timeline-item reveal">
+            <time>Internship</time>
+            <h3>Web Development Intern</h3>
+            <p class="company">Techlynx Innovations Private Limited</p>
+            <p>
+              Developed responsive career platform pages using React.js, Bootstrap, HTML5, CSS3, and JavaScript,
+              with interactive navigation, CTA flows, contact sections, and chatbot UI.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="current-work" class="section bg-cloud">
+      <div class="mx-auto max-w-7xl px-5 lg:px-8">
+        <p class="eyebrow reveal">Currently Working On</p>
+        <h2 class="section-title reveal">Present work on the HRMS Portal.</h2>
+        <div class="mt-10 flex flex-wrap justify-center gap-6">
+          <article class="current-work-card reveal md:w-[calc(50%-12px)] w-full">
+            <div class="p-6">
+              <div class="flex items-center justify-between">
+                <h3 class="text-xl font-bold text-ink">Loan Management Module</h3>
+                <span
+                  class="inline-flex items-center rounded-full bg-amber-100 px-2.5 py-0.5 text-xs font-medium text-amber-800">In
+                  Progress</span>
+              </div>
+              <p class="mt-2 text-sm font-semibold text-blue">HRMS Portal</p>
+              <p class="mt-4 text-slate-650 leading-relaxed">Presently working on building and integrating the loan
+                management workflows and UI.</p>
+            </div>
+          </article>
+
+          <article class="current-work-card reveal md:w-[calc(50%-12px)] w-full">
+            <div class="p-6">
+              <div class="flex items-center justify-between">
+                <h3 class="text-xl font-bold text-ink">Performance Management</h3>
+                <span
+                  class="inline-flex items-center rounded-full bg-teal-100 px-2.5 py-0.5 text-xs font-medium text-teal-800">Completed</span>
+              </div>
+              <p class="mt-2 text-sm font-semibold text-blue">HRMS Portal</p>
+              <p class="mt-4 text-slate-650 leading-relaxed">Developed performance tracking, reviews, and evaluation
+                systems.</p>
+            </div>
+          </article>
+
+          <article class="current-work-card reveal md:w-[calc(50%-12px)] w-full">
+            <div class="p-6">
+              <div class="flex items-center justify-between">
+                <h3 class="text-xl font-bold text-ink">Payroll & Config</h3>
+                <span
+                  class="inline-flex items-center rounded-full bg-teal-100 px-2.5 py-0.5 text-xs font-medium text-teal-800">Completed</span>
+              </div>
+              <p class="mt-2 text-sm font-semibold text-blue">HRMS Portal</p>
+              <p class="mt-4 text-slate-650 leading-relaxed">Configured payroll management modules and system settings.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="mx-auto max-w-7xl px-5 lg:px-8">
+        <p class="eyebrow reveal">Services</p>
+        <h2 class="section-title reveal">Ways Harshith can help teams ship better web UI.</h2>
+        <div class="mt-10 marquee-container">
+          <div class="marquee-track">
+            <div class="marquee-group">
+              <div class="service-card">Responsive Website Development</div>
+              <div class="service-card">Landing Page Development</div>
+              <div class="service-card">Frontend Development</div>
+              <div class="service-card">API Integration</div>
+              <div class="service-card">Website Optimization</div>
+            </div>
+            <div class="marquee-group" aria-hidden="true">
+              <div class="service-card">Responsive Website Development</div>
+              <div class="service-card">Landing Page Development</div>
+              <div class="service-card">Frontend Development</div>
+              <div class="service-card">API Integration</div>
+              <div class="service-card">Website Optimization</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section bg-ink text-white">
+      <div class="mx-auto grid max-w-7xl gap-10 px-5 lg:grid-cols-[0.9fr_1.1fr] lg:px-8">
+        <div class="reveal">
+          <p class="eyebrow text-teal">Contact</p>
+          <h2 class="section-title text-white">Let's Build Something Together</h2>
+          <p class="mt-5 text-lg leading-8 text-slate-300">
+            Have a role, collaboration, or frontend project in mind? Send a message and Harshith will get back to you.
+          </p>
+          <div class="mt-8 space-y-3 text-slate-200">
+            <p><strong>Email:</strong> bonthaharshithsai@gmail.com</p>
+            <p><strong>Phone:</strong> +91 9951391626</p>
+            <p><strong>Location:</strong> Guntur, Andhra Pradesh, India</p>
+          </div>
+        </div>
+
+        <form id="contactForm" class="contact-form reveal" novalidate>
+          <div class="grid gap-4 sm:grid-cols-2">
+            <label for="name">Name<input id="name" name="name" type="text" placeholder="Your name" required /></label>
+            <label for="email">Email<input id="email" name="email" type="email" placeholder="you@example.com"
+                required /></label>
+          </div>
+          <label for="subject">Subject<input id="subject" name="subject" type="text"
+              placeholder="Project or role inquiry" required /></label>
+          <label for="message">Message<textarea id="message" name="message" rows="5"
+              placeholder="Tell me what you want to build" required></textarea></label>
+          <p id="formMessage" class="form-message" role="status"></p>
+          <button type="submit" class="btn-primary w-full justify-center">Submit Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-white px-5 py-10 lg:px-8">
+    <div class="mx-auto flex max-w-7xl flex-col gap-6 md:flex-row md:items-center md:justify-between">
+      <div>
+        <strong>Harshith Sai Bontha</strong>
+        <p class="mt-2 max-w-xl text-sm text-slate-600">
+          Frontend web developer creating responsive, API-connected interfaces for real-world products.
+        </p>
+      </div>
+      <div class="flex flex-wrap items-center gap-4 text-sm font-semibold">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <button id="backToTop" class="rounded-lg border border-line px-4 py-2">Back to top</button>
+      </div>
+    </div>
+    <p class="mx-auto mt-8 max-w-7xl text-sm text-slate-500">Copyright © 2026 Harshith Sai Bontha. All rights reserved.
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
